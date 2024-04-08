@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 // Initialize user balance and pin code
 let myBalance = 10000; // Dollar
@@ -45,7 +46,7 @@ if (pinAnswer.pin === myPin) {
             else {
                 myBalance -= fastCashAns.fastCash;
                 console.log(`${fastCashAns.fastCash} withdraw successfully`);
-                console.log(`Your remaining balane is: ${myBalance}`);
+                console.log(`Your remaining balance is: ${myBalance}`);
             }
         }
         else if (withdrawAns.withdrawMethod === "Enter Amount") {
